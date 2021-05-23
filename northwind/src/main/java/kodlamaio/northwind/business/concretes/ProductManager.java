@@ -22,7 +22,7 @@ private ProductDao productDao;
 
 	@Override
 	public List<Product> getAll() {
-		// TODO Auto-generated method stub
+		
 		return this.productDao.findAll();
 	}
 

@@ -6,11 +6,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-	@Entity
-	@Table(name="products")
+@Entity
+@Table(name="products")
 public class Product {
-	@Id
-	@GeneratedValue
+@Id
+@GeneratedValue
 @Column(name="product_id")
 private int id;
 @Column(name="category_id")
@@ -25,6 +25,7 @@ private short unitsInStock;
 private String quantityPerUnit;
 
 public Product () {}
+
 public Product(int id, int categoryId, String productName, double unitPrice, short unitsInStock,
 		String quantityPerUnit) {
 	super();
